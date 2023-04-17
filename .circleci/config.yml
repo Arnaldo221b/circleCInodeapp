@@ -24,4 +24,4 @@ workflows:
   greet_and_build:
     jobs:
       - sayhi
-      - greet_and_build
+      - build
