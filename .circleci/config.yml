@@ -1,6 +1,12 @@
 version: 2.1
 jobs:
   sayhi:
+    docker:
+      - image: cimg/node:14.10.1
+    steps:
+      - run:
+            name: Just sends salutations
+            command: echo "Hi everybody. Hope this works"
   build:
     docker:
       - image: cimg/node:14.10.1
