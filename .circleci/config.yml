@@ -1,11 +1,14 @@
 version: 2.1
 jobs:
+  sayhi:
   build:
     docker:
       - image: cimg/node:14.10.1
     steps:
       - checkout
       - run:
+            name: Dependencies intallation for my app
             command: npm install
       - run:
+            name: Running unit tests for the app
             command: npm test
