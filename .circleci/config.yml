@@ -18,3 +18,9 @@ jobs:
       - run:
             name: Running unit tests for the app
             command: npm test
+
+# Workflows 
+workflows:
+  greet_and_build:
+    - sayhi
+    - build
